@@ -1,26 +1,20 @@
 import React from 'react'
-//import PropTypes from 'prop-types'
-import { ResponsiveLogoNavBar } from 'gatsby-ui-components'
+import { Link } from 'gatsby'
 
-import logo from '../../static/img/logo.jpg'
+const Navbar = class extends React.Component {
 
-const NavBar = () => {
-  
-  let links = [{
-    'title': 'home',
-    'link': 'home'
-  },
-  {
-    'title': 'events',
-    'link': 'events'
-  },
-  ]
+  render() {
+    return(
+      <nav className="navbar" role="navigation" aria-label="main navigation">
+        <div>
+          <Link to="/">
+            Home
+          </Link>
+        </div>
+      </nav>
+    )
+  }
 
-  return(
-    <div>
-      <ResponsiveLogoNavBar links={links} logo={logo} />
-    </div>
-  )
 }
 
-export default NavBar
+export default Navbar
