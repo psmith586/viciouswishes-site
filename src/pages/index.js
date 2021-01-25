@@ -12,7 +12,7 @@ export const IndexPageTemplate = ({
 }) => (
   <div>
     <div>
-      Background Image here
+      Background image here
       <div>
         <h1>
           {title}
@@ -20,6 +20,9 @@ export const IndexPageTemplate = ({
         <h3>
           {heading}
         </h3>
+        <h4>
+          {subheading}
+        </h4>
       </div>
     </div>
   </div>
